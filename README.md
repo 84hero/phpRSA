@@ -38,3 +38,14 @@ $encStr = $RSA->encrypt($data);
 $decStr = $RSA->decrypt($encStr);
 
 ```
+
+#####Example 3
+```
+$privateKeyContent = file_get_content('./pem/privateKey.pem');
+$publicKeyContent = file_get_content('./pem/publicKey.pem');
+  
+$sign = phpRSA\RSA::sign($data,$privateKeyContent);
+$res = phpRSA\RSA::verify($sign, $data, $publicKeyContent);
+$encStr = phpRSA\RSA::encrypt($data, $publicKeyContent);
+$decStr = phpRSA\RSA::decrypt($encStr, $privateKeyContent);
+```
