@@ -1,0 +1,22 @@
+{
+    "name": "84hero/php-rsa",
+    "description": "A Simple RSA Class For PHP ",
+    "keywords": ["RSA", "PHP RSA Class"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "84hero",
+            "email": "84hero@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "phpRSA\\": "src/phpRSA"
+        }
+    }
+}
